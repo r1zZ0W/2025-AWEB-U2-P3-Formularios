@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Fonts: Poppins -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Reservaciones</title>
+    </head>
+    <body>
+        
+        <header>
+            <h1>Reserva de habitación</h1>
+        </header>
+        
+        <main>
+            <form>
+                <fieldset>
+
+                    <legend>
+                        Información personal
+                    </legend>
+
+                    <table>
+                        <tr>
+                            <td colspan="8">
+                                <label class="labelForm" for="inputNombre">Nombres</label>
+                                <input type="text"
+                                    id="inputNombre"
+                                    name="inputNombre"
+                                    placeholder="Ej. Mariano">
+                            </td>
+                            <td colspan="8">
+                                <label class="labelForm" for="inputApellido">Apellidos</label>
+                                <input type="text"
+                                    id="inputApellido"
+                                    name="inputApellido"
+                                    placeholder="Ej. Carranza">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="8">
+                                <label class="labelForm" for="inputTelefono">Teléfono</label>
+                                <input type="tel"
+                                    id="inputTelefono"
+                                    name="inputTelefono"
+                                    placeholder="Ej. +52 777 883 9628">
+                            </td>
+                            <td colspan="8">
+                                <label class="labelForm" for="inputRFC">RFC</label>
+                                <input type="text"
+                                    id="inputRFC"
+                                    name="inputRFC"
+                                    placeholder="Ej. HSU22726HSGS">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>
+                        Dirección
+                    </legend>
+
+                    <table>
+                        <tr>
+                            <td colspan="8">
+                                <label class="labelForm" for="inputCalle">Calle</label>
+                                <input type="text"
+                                    id="inputCalle"
+                                    name="inputCalle"
+                                    placeholder="Ej. Conquistadores">
+                            </td>
+
+                            <td colspan="8">
+                                <label class="labelForm" for="inputColonia">Colonia</label>
+                                <input type="text"
+                                    id="inputColonia"
+                                    name="inputColonia"
+                                    placeholder="Ej. Reforma">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="8">
+                                <label class="labelForm" for="inputNumeroCasa">Numero de Casa</label>
+                                <input type="number"
+                                    id="inputNumeroCasa"
+                                    name="inputNumeroCasa"
+                                    placeholder="Ej. 106">
+                            </td>
+
+                            <td colspan="8">
+                                <label class="labelForm" for="inputCP">Codigo Postal</label>
+                                <input type="number"
+                                    id="inputCP"
+                                    name="inputCP"
+                                    placeholder="Ej. 54665">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="16">
+                                <label class="labelForm" for="inputLocalidad">Estado</label>
+                                <input type="text"
+                                    id="inputLocalidad"
+                                    name="inputLocalidad"
+                                    placeholder="Ej. Taxco">
+                            </td>
+                        </tr>
+                    </table> 
+                </fieldset>
+
+                <fieldset>
+                    
+                    <legend>
+                        Datos de Reservación
+                    </legend>
+                    
+                    <table>
+                        <tr>
+                            <td colspan="8">
+                                <label class="labelForm" for="inputCantidadPersonas">Cantidad de personas</label>
+                                <input type="number" 
+                                    id="inputCantidadPersonas"
+                                    name="inputCantidadPersonas"
+                                    placeholder="Ej. 5">
+                            </td>
+
+                            <td colspan="8">
+                                <label class="labelForm" for="inputIdioma">Idioma</label>
+                                <input type="text"
+                                    id="inputIdioma"
+                                    name="inputIdioma"
+                                    placeholder="Ej. Español">
+                            </td>  
+                        </tr>
+                        <tr>
+                            <td colspan="8">
+                                <label class="labelForm" for="inputFechaEntrada">Fecha de Entrada</label>
+                                <input type="date" 
+                                    id="inputFechaEntrada"
+                                    name="inputFechaEntrada">    
+                            </td>
+
+                            <td colspan="8">
+                                <label class="labelForm" for="inputFechaSalida">Fecha de Salida</label>
+                                <input type="date" 
+                                    id="inputFechaSalida"
+                                    name="inputFechaSalida">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="16">
+                                <p>Tipo de habitación</p>
+                                <p>
+                                    <input type="radio"
+                                        id="inputRadioSimple" 
+                                        name="inputRadioHabitacion">
+                                    <label for="inputRadioSimple">Simple</label>
+
+                                    <input type="radio"
+                                        id="inputRadioDuplex" 
+                                        name="inputRadioHabitacion">
+                                    <label for="inputRadioDuplex">Duplex</label>
+
+                                    <input type="radio"
+                                        id="inputRadioPremium" 
+                                        name="inputRadioHabitacion">
+                                    <label for="inputRadioPremium">Premium</label>
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="16">
+                                <p>Tipo de cama</p>
+                                <p>
+                                    <input type="radio"
+                                        id="inputRadioMatrimonial" 
+                                        name="inputRadioCama">
+                                    <label for="inputRadioMatrimonial">Matrimonial</label>
+
+                                    <input type="radio"
+                                        id="inputRadioKing" 
+                                        name="inputRadioCama">
+                                    <label for="inputRadioKing">King</label>
+
+                                    <input type="radio"
+                                        id="inputRadioQueen" 
+                                        name="inputRadioCama">
+                                    <label for="inputRadioQueen">Queen</label>
+                                </p>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="16" class="centrar" >
+                                <button type="submit">Reservar :D</button>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            
+        </footer>
+    </body>
+</html>
